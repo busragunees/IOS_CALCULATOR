@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+        <title>iPhone calculator</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    </head>
+
+    <body>
+        <!-- <label class="result-label" id="result"></label> -->
+
+        <div class="iphone-wrap">
+            <div class="iphone-display">
+            <header class="iphone-header">
+                <div class="wifi">Büşra<i class="fas fa-wifi"></i>
+                </div>
+                <div class="clock">
+                19:32
+                </div>
+                <div class="battery">
+                <i class="fas fa-battery-three-quarters"></i>
+                </div>
+            </header>
+
+            <div class="calculator">
+                <label class="result-label" id="result"></label>
+                <div class="keys">
+                    <button class="row" onclick="buttonAC()" data-action="clear">AC</button>
+                    <button class="row"onclick="negativePositiveButton()" data-action="sign">±</button>
+                    <button class="key-operator row" onclick="percentButton()"  data-action="percentage">%</button>
+                    <button class="key-operator column" onclick="divideButton()" data-action="divide">÷</button>
+                    <button class="number" onclick="allNumbers(7)" >7</button>
+                    <button class="number" onclick="allNumbers(8)" >8</button>
+                    <button class="number" onclick="allNumbers(9)" >9</button>
+                    <button class="key-operator column"onclick="multipleButton()"  data-action="multiply">×</button>
+                    <button class="number"onclick="allNumbers(4)" >4</button>
+                    <button class="number"onclick="allNumbers(5)" >5</button>
+                    <button class="number"onclick="allNumbers(6)" >6</button>
+                    <button class="key-operator column"onclick="extractionButton()"  data-action="substract">-</button>
+                    <button class="number"onclick="allNumbers(1)" >1</button>
+                    <button class="number"onclick="allNumbers(2)" >2</button>
+                    <button class="number"onclick="allNumbers(3)" >3</button>
+                    <button class="key-operator column"onclick="additionButton()"  data-action="add">+</button>
+                    <button class="number zero"onclick="allNumbers(0)" >0</button>
+                    <button data-action="decimal"onclick="commaButton()" >.</button>
+                    <button class="column" onclick="equalButton()" data-action="calculate">=</button>
+                </div> 
+                </div>
+            </div>
+        </div>
+        </div>
+        <script src="App.js"></script>
+
+    </body>
+</html>
